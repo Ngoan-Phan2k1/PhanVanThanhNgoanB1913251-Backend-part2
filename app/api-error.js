@@ -1,7 +1,9 @@
 class ApiError extends Error {
     constructor (statusCode, message) {
-        super():
+        super();
         this.statusCode = statusCode;
         this.message = message;
     }
 }
+
+module.export = ApiError;
