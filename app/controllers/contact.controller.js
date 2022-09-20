@@ -4,7 +4,7 @@ const MongoDB = require("../utils/mongodb.util");
 
 //bk2
 exports.create = async (req, res, next) =>{
-    if(!req.body?.name) {
+    if(!req.body?. name) {
         return next(new ApiError(400, "Name can not be empty"));
     }
 
